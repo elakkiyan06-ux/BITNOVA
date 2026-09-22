@@ -60,19 +60,18 @@ export const StudentSidebar: React.FC<StudentSidebarProps> = ({
           isMobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
         }`}
       >
-        {/* Brand Header */}
-        <div className="p-4 border-b border-slate-800 flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2563EB] to-[#1D4ED8] flex items-center justify-center text-white shadow-md shadow-blue-950 shrink-0 border border-blue-400/30">
-            <div className="relative">
-              <GraduationCap className="w-6 h-6" />
-              <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-emerald-400 rounded-full ring-2 ring-[#0B1B33]" />
-            </div>
-          </div>
-          <div>
-            <h1 className="font-black text-base tracking-tight text-white leading-none">
+        {/* Brand Header with Official Logo */}
+        <div className="p-3.5 border-b border-slate-800 flex items-center gap-2.5">
+          <img
+            src="./logo.png"
+            alt="BITNOVA Logo"
+            className="h-9 w-auto object-contain rounded-lg shrink-0"
+          />
+          <div className="overflow-hidden">
+            <h1 className="font-black text-sm tracking-tight text-white leading-none truncate">
               BITNOVA
             </h1>
-            <p className="text-[10px] text-blue-400 font-bold tracking-widest uppercase mt-1">
+            <p className="text-[9px] text-blue-400 font-bold tracking-wider uppercase mt-1 truncate">
               ACADEMIC INTELLIGENCE
             </p>
           </div>

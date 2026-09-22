@@ -250,22 +250,12 @@ export const LoginView: React.FC<LoginViewProps> = ({ onLogin }) => {
 
         {/* Top Branding Section */}
         <div className="relative z-10">
-          <div className="flex items-center gap-3.5 mb-3">
-            {/* BITNOVA Institutional Logo: Minimal graduation cap + data analytics node */}
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#2563EB] to-[#1D4ED8] flex items-center justify-center shadow-lg shadow-blue-900/40 border border-blue-400/30">
-              <div className="relative">
-                <GraduationCap className="w-7 h-7 text-white" />
-                <span className="absolute -bottom-1 -right-1 w-2.5 h-2.5 bg-emerald-400 rounded-full ring-2 ring-[#0B1B33]" />
-              </div>
-            </div>
-            <div>
-              <h1 className="text-2xl font-black tracking-tight text-white flex items-center gap-2">
-                BITNOVA
-              </h1>
-              <p className="text-[11px] font-bold tracking-widest text-blue-300 uppercase">
-                ACADEMIC INTELLIGENCE
-              </p>
-            </div>
+          <div className="mb-4">
+            <img
+              src="./logo.png"
+              alt="BITNOVA Academic Intelligence"
+              className="h-20 w-auto object-contain rounded-xl shadow-lg border border-blue-400/20"
+            />
           </div>
 
           <p className="text-sm text-slate-300 font-medium max-w-md mt-4 leading-relaxed">
